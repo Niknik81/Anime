@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400;
+            height: 350;
+            background: red;
   
-  <!-- HTML -->
-  
+        }
+        .e2{
+            display: flex;
+            justify-content: space-around;
+        }
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+        @media (max-width:400px)
+           
+           {
+            .e2{
+                flex-direction: row;
+            }
+           .box{
+            width: 100%;
+            margin-top: 30px;
+           }
+        }
+
+    </style>
 </head>
-
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
-  <script src="main.js"></script>
+    <div class="e2">
+        <div class="box"><a href=""><img src="Naruto s1.jpg" height="380px" width="215px"></a></div>
+        <div class="box"><a href=""><img src="naruto shippuden .jpg" height="380px" width="215px"></a></div>
+        
+    </div>
 </body>
 </html>
